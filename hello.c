@@ -75,7 +75,7 @@ static int __init timer_init()
 
     init_timer_on_stack(&timer);
 
-    times_obj = kobject_create_and_add("timer", NULL); //создаёт папку в sysfs
+    times_obj = kobject_create_and_add("timer", NULL); 
     if (!times_obj) {
         return -ENOMEM;
     }
